@@ -1,6 +1,6 @@
 import telebot
 from pytube import YouTube
-bot = telebot.TeleBot("7365596714:AAHOWrgvBj0QkrXm0_Oy1ukaHzxKOhiqzpc")
+bot = telebot.TeleBot("token")
 @bot.message_handler(commands=['start'])
 def message(message):
     bot.send_message(message.chat.id,'Hello im a bot for downloading videos from Youtube, please send a youtube video link and i will send you downloaded video.')
